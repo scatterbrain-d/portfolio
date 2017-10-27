@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    overflow: auto;
+}
+
+.header {
+    height: 5vh;
+    background: black;
+    width: 150%;
+}
+
+.container {
+    position: relative;
+    margin: 0;
+    height: 95vh;
+    width: 150%;
+    overflow: inherit;
+    background: url("stars.png");
+}
+
+.planet {
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    -moz-box-shadow: 2px 2px 3px #111, inset 0 0 10px #111;
+    -webkit-box-shadow: 2px 2px 3px #111, inset 0 0 10px #111; 
+    box-shadow: 2px 2px 3px #111, inset 0 0 10px #111;
+}
+
+.projects {
+    height: 80vmin;
+    width: 80vmin;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+.proj {
+    height: 60vmin;
+    width: 60vmin;
+    background-image: radial-gradient(
+        #fe0, #e60);
+}
+
+.contact {
+    height: 40vmin;
+    width: 40vmin;
+    position: absolute;
+    left: 5vw;
+    top: 55vh;
+}
+
+.fan {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.contact p {
+    position: absolute;
+    left: 49%;
+    top: 8%;
+    height: 16vmin;
+    transform-origin: 0 100%;
+}
+
+#a1 {transform: rotate(-35deg)}
+#a2 {transform: rotate(-25deg)}
+#a3 {transform: rotate(-15deg)}
+#a4 {transform: rotate(-5deg)}
+#a5 {transform: rotate(5deg)}
+#a6 {transform: rotate(25deg)}
+#a7 {transform: rotate(35deg)}
+
+#c1 {transform: rotate(-30deg)}
+#c2 {transform: rotate(-20deg)}
+#c3 {transform: rotate(-10deg)}
+#c4 {transform: rotate(0deg)}
+#c5 {transform: rotate(10deg)}
+#c6 {transform: rotate(20deg)}
+#c7 {transform: rotate(30deg)}
+
+.conta {
+    height: 20vmin;
+    width: 20vmin;
+    position: absolute;
+    top: 25%;
+    left:25%;
+    background-image: radial-gradient(
+        #e33, #622);
+}
+
+.about {
+    height: 50vmin;
+    width: 50vmin;
+    position: absolute;
+    left: 15vw;
+    top: 10vh;
+}
+
+.about p {
+    position: absolute;
+    left: 49%;
+    top: 10%;
+    height: 18vmin;
+    transform-origin: 0 100%;
+}
+
+.aboo {
+    height: 25vmin;
+    width: 25vmin;
+    top: 25%;
+    left: 25%;
+    background-image: radial-gradient(
+        #ddd, #555);
+}
