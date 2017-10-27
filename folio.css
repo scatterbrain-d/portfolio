@@ -1,6 +1,16 @@
 body {
     margin: 0;
     overflow: auto;
+    font-family: 'Space Mono', monospace;
+}
+
+.turntable p {
+    margin: 0;
+    position: absolute;
+    left: 49%;
+    bottom: 50%;
+    transform-origin: 0 100%;
+    height: 35%;
 }
 
 .header {
@@ -27,43 +37,42 @@ body {
     box-shadow: 2px 2px 3px #111, inset 0 0 10px #111;
 }
 
-.projects {
-    height: 80vmin;
-    width: 80vmin;
+#center {
+    height: 120vmin;
+    width: 120vmin;
     position: absolute;
-    top: 25%;
-    left: 40%;
+    left: 25%;
+    animation-delay: 2s;
+    font-size: 2em;
 }
 
-.proj {
+#center p {
+    height: 30%;
+}
+
+#sun {
     height: 60vmin;
     width: 60vmin;
+    top: 25%;
+    left: 25%;
     background-image: radial-gradient(
         #fe0, #e60);
 }
 
-.contact {
+#contact {
     height: 40vmin;
     width: 40vmin;
     position: absolute;
-    left: 5vw;
-    top: 55vh;
+    top: 55%;
 }
 
-.fan {
+.turntable {
     position: relative;
     height: 100%;
     width: 100%;
     text-align: center;
     color: white;
-}
-
-.contact p {
-    position: absolute;
-    left: 49%;
-    top: 8%;
-    height: 16vmin;
-    transform-origin: 0 100%;
+    transition: all 2s;
 }
 
 #a1 {transform: rotate(-35deg)}
@@ -82,6 +91,16 @@ body {
 #c6 {transform: rotate(20deg)}
 #c7 {transform: rotate(30deg)}
 
+#p1 {transform: rotate(-80deg)}
+#p2 {transform: rotate(-75deg)}
+#p3 {transform: rotate(-70deg)}
+#p4 {transform: rotate(-65deg)}
+#p5 {transform: rotate(-60deg)}
+#p6 {transform: rotate(-55deg)}
+#p7 {transform: rotate(-50deg)}
+#p8 {transform: rotate(-45deg)}
+#p9 {transform: rotate(-35deg)}
+
 .conta {
     height: 20vmin;
     width: 20vmin;
@@ -92,20 +111,29 @@ body {
         #e33, #622);
 }
 
-.about {
+#about {
     height: 50vmin;
     width: 50vmin;
     position: absolute;
-    left: 15vw;
-    top: 10vh;
+    left: 10%;
+    top: 10%;
+    font-size: 1.2em;
+    animation-delay: 1s;
 }
 
-.about p {
-    position: absolute;
-    left: 49%;
-    top: 10%;
-    height: 18vmin;
-    transform-origin: 0 100%;
+.container>div {
+    animation-name: wobble;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wobble {
+    0% {transform: translate(0)}
+    25% {transform: translate(3px)}
+    50% {transform: translate(0)}
+    75% {transform: translate(-3px)}
+    100% {transform: translate(0)}
 }
 
 .aboo {
