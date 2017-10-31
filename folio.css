@@ -1,24 +1,20 @@
-body {
+html, body {
     margin: 0;
     overflow: hidden;
     font-family: 'Space Mono', monospace;
+    height: 100vh;
+    width: 150vw;
+    background: url("images/stars.png");
+    background-size: cover;
 }
 
-.header {
-    height: 5vh;
-    background: black;
-    width: 150%;
-}
+h2 {margin: 0.5em;}
 
 .container {
-    position: relative;
-    margin: 0;
-    height: 95vh;
-    width: 150%;
-    overflow: inherit;
-    background: url("images/stars.png");
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
-
 .turntable {
     position: relative;
     height: 100%;
@@ -26,6 +22,7 @@ body {
     text-align: center;
     color: white;
     transition: all 2s;
+    overflow: inherit;
 }
 
 .turntable p {
@@ -34,7 +31,7 @@ body {
     left: 49%;
     bottom: 50%;
     transform-origin: 0 100%;
-    height: 35%;
+    height: 52%;
     text-shadow: 0 0 2px green;
 }
 
@@ -45,6 +42,7 @@ body {
     -moz-box-shadow: 2px 2px 3px #111, inset 0 0 10px #111;
     -webkit-box-shadow: 2px 2px 3px #111, inset 0 0 10px #111; 
     box-shadow: 2px 2px 3px #111, inset 0 0 10px #111;
+    z-index:1;
 }
 
 .planet:hover {
@@ -58,137 +56,170 @@ body {
 }
 
 .content {
-    margin: auto;
+    margin: 2px;
     border-radius: 2%;
-    height: 50%;
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    max-height: 99%;
 }
 
 .content img {
-    width: 90%;
+    width: 85%;
     height: auto;
+    max-height: 100%;
+    border: 2px solid #222;
+    box-sizing: border-box;
+}
+
+.content ul {
+    display: inline-block;
+}
+
+.flag {
+    height: 40%;
+    position: absolute;
+    top: 12%;
+    left:40%;
+    transition: all 2s;
+    z-index: -1;
+}
+
+#chronicle-content {
+    font-family: 'Alegreya', serif;
+}
+
+#roboto-content {
+    font-family: 'Roboto', sans-serif;
+}
+
+#farm-content {
+    font-family: 'Irish Grover', cursive;
 }
 
 #blurb {
     position: absolute;
-    margin: 5% 10%;
+    margin:0;
     height: 100%;
-    width: 50%;
-    left: 40%;
+    width: 45%;
+    left: 50%;
     text-align: center;
     z-index: -1;
 }
 
 #center {
-    height: 120vmin;
-    width: 120vmin;
+    height: 35rem;
+    width: 35rem;
     position: absolute;
-    left: 25%;
+    top: 18%;
+    left: 60%;
     animation-delay: 2s;
     font-size: 2em;
 }
 
 #center p {
-    height: 30%;
+    height: 45%;
 }
 
 #sun {
-    height: 60vmin;
-    width: 60vmin;
-    top: 25%;
-    left: 25%;
+    height: 75%;
+    width: 75%;
+    top: 12.5%;
+    left: 12.5%;
     background-image: radial-gradient(
         #fe0, #e60);
 }
 
 #contact {
-    height: 40vmin;
-    width: 40vmin;
+    height: 10rem;
+    width: 10rem;
     position: absolute;
-    top: 55%;
+    left: 15%;
+    top: 60%;
 }
 
 
 #conta {
-    height: 20vmin;
-    width: 20vmin;
+    height: 75%;
+    width: 75%;
     position: absolute;
-    top: 25%;
-    left:25%;
+    top: 12.5%;
+    left:12.5%;
     background-image: radial-gradient(
         #e33, #622);
 }
 
 #about {
-    height: 50vmin;
-    width: 50vmin;
+    height: 12rem;
+    width: 12rem;
     position: absolute;
-    left: 10%;
-    top: 10%;
+    left: 30%;
+    top: 15%;
     font-size: 1.2em;
     animation-delay: 1s;
+    text-align: center;
 }
 
 #abou {
-    height: 25vmin;
-    width: 25vmin;
-    top: 25%;
-    left: 25%;
+    height: 75%;
+    width: 75%;
+    top: 12.5%;
+    left: 12.5%;
     background-image: radial-gradient(
         #ddd, #555);
 }
 
 #chronicle {
-    height: 50vmin;
-    width: 50vmin;
+    height: 13rem;
+    width: 13rem;
     position: absolute;
-    left: 85%;
-    top: -5%;
+    left: 125%;
+    top: 5%;
     font-size: 1.2em;
     animation-delay: 1s;
 }
 
 #chron {
-    height: 25vmin;
-    width: 25vmin;
-    top: 25%;
-    left: 25%;
+    height: 75%;
+    width: 75%;
+    top: 12.5%;
+    left: 12.5%;
     background-image: radial-gradient(
         #add, #599);
 }
 
-#ark {
-    height: 40vmin;
-    width: 40vmin;
+#farm {
+    height: 10rem;
+    width: 10rem;
     position: absolute;
-    left: 70%;
-    top: 25%;
+    left: 100%;
+    top: 30%;
 }
 
-#arkus {
-    height: 20vmin;
-    width: 20vmin;
-    top: 25%;
-    left: 25%;
+#farmon {
+    height: 75%;
+    width: 75%;
+    top: 12.5%;
+    left: 12.5%;
     background-image: radial-gradient(
         #aad, #55a);
 }
 
 #wok {
-    height: 40vmin;
-    width: 40vmin;
+    height: 8rem;
+    width: 8rem;
     position: absolute;
-    left: 78%;
-    top: 65%;
+    left: 113%;
+    top: 70%;
     animation-delay: 2s;
 }
 
 #wokof {
-    height: 20vmin;
-    width: 20vmin;
-    top: 25%;
-    left: 25%;
+    height: 75%;
+    width: 75%;
+    top: 12.5%;
+    left: 12.5%;
     background-image: radial-gradient(
         #d60, #620);
 }
@@ -206,6 +237,21 @@ body {
     25% {transform: translate(3px)}
     75% {transform: translate(-3px)}
 }
+
+form {
+    margin:auto;
+    width: 80%;
+    text-align: right;
+}
+
+input, textarea {
+    width: 80%;
+    margin: 1em 1px 0 1px;
+    padding: 1px;
+    border: 1px solid gray;
+}
+
+textarea {height: 10em;}
 
 #a1 {transform: rotate(-35deg)}
 #a2 {transform: rotate(-25deg)}

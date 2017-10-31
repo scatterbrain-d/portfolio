@@ -4,13 +4,12 @@
         <title>A.Finnell Design</title>
         <link rel="stylesheet" type="text/css" href="folio.css">
         <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya:400,700">
+        <link href="https://fonts.googleapis.com/css?family=Irish+Grover" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     </head>
     <body>
         <div id="blurb"></div>
-        <div class="header">
-            Brand
-            <hr>
-        </div>
         
         <div class="container">
             
@@ -24,13 +23,39 @@
                     <p id="a7">M</p>
                     <p id="a8">E</p>
                     <div id="abou" class="planet">
-                        <div class="content">
+                        <div id="roboto-content" class="content">
                             <h2>About Me</h2>
-                            <p>dsuhfsalghafslfskdshldusauh</p>
-                            <button>Close</button>
+                            <img>
+                            <p>
+                                Hello and Welcome! I'm a self-taught full-stack web developer living Austin, Texas.
+                                Programming has been a hobby of mine for a while, and now I'm ready
+                                to take the plunge into the professional web dev world. I posses the following
+                                skills:
+                            </p>
+                            <ul>
+                                <li>Javascript/ES6</li>
+                                <li>CSS3, Bootstrap, Semantic UI, etc.</li>
+                                <li>Node.js with Express</li>
+                                <li>EJS templates</li>
+                            </ul>
+                            <ul>
+                                <li>React, Angular, Vue JS frameworks</li>
+                                <li>Mongodb/SQL</li>
+                                <li>Mobile-ready layouts with CSS grid/flexbox</li>
+                                <li>Creative/artistic design</li>
+                            </ul>
+                            <p>
+                                Other hobbies include hiking, reading, sculpture, D&D and other tabletop games,
+                                cooking, movies, and spending time with my beautiful wife and daughter!
+                            </p>
+                            <p>
+                                Want to know more? Feel free to <a href="#">contact me!</a>
+                            </p>
+                            <button class="close">Close</button>
                         </div>
                     </div>
                 </div>
+                <img class="flag" src="images/flag.png">
             </div>
             
             <div id="contact">
@@ -43,13 +68,33 @@
                     <p id="c6">C</p>
                     <p id="c7">T</p>
                     <div id="conta" class="planet">
-                        <div class="content">
+                        <div id="roboto-content" class="content">
                             <h2>Contact info</h2>
-                            <p>dsuhfsalghafslfskdshldusauh</p>
-                            <button>Close</button>
+                            <p>
+                                Contact me by email at andy.finnell@gmail.com, or send me 
+                                a message with the form below.
+                            </p>
+                            <form action="https://formspree.io/andy.finnell@gmail.com" method="POST">
+                                <div>
+                                    <label id="name">Name: </label>
+                                    <input id="name" type="text" name="name">
+                                </div>
+                                <div>
+                                    <label id="email">Email: </label>
+                                    <input id="email" type="email" name="email">
+                                </div>
+                                <div>
+                                    <label id="company">Company: </label>
+                                    <input id="company" type="text" name="compnay">
+                                </div>
+                                <textarea name="content"></textarea>
+                                <div><button type="submit">Submit</button></div>
+                            </form>
+                            <button class="close">Close</button>
                         </div>
                     </div>
                 </div>
+                <img class="flag" src="images/tower.png">
             </div>
             
             <div id="center">
@@ -79,30 +124,79 @@
                     <p id="c7">L</p>
                     <p id="c8">E</p>
                     <div id="chron" class="planet">
-                        <div class="content">
+                        <div id="chronicle-content" class="content">
                             <h2>D&D Chronicles</h2>
-                            <img src="images/chronicles2.png">
-                            <p>dsuhfsalghafslfskdshldusauh</p>
-                            <button>Close</button>
+                            <a href="https://dnd-chronicles.herokuapp.com/sessions">
+                                <img src="images/chronicles.png">
+                            </a>
+                            <p>
+                                Designed to document an ongoing Dungeons and Dragons campaign,
+                                this full stack application combines a blog template with a character 
+                                repository. Responsive design facilitates use on mobile devices.
+                            </p>
+                            <ul>
+                                <li>Node.js back end</li>
+                                <li>Express framework</li>
+                                <li>RESTful routing</li>
+                                <li>EJS templates</li>
+                            </ul>
+                            <ul>
+                                <li>Two linked Mongodb databases</li>
+                                <li>Bootstrap and custom css</li>
+                                <li>Responsive layout</li>
+                                <li>Modular file system</li>
+                            </ul>
+                            <hr>
+                            <a href="https://dnd-chronicles.herokuapp.com/sessions">
+                                <button>Website</button>
+                            </a>
+                            <a href="https://github.com/scatterbrain-d/dnd-chronicles">
+                                <button>Github</button>
+                            </a>
+                            <button class="close">Close</button>
                         </div>
                     </div>
                 </div>
+                <img class="flag" src="images/dragon.png">
             </div>
             
-            <div id="ark" class="projects">
+            <div id="farm" class="projects">
                 <div class="turntable">
                     <p id="a3">F</p>
                     <p id="a4">A</p>
                     <p id="a5">R</p>
                     <p id="a6">M</p>
-                    <div id="arkus" class="planet">
-                        <div class="content">
-                            <h2>Lily's Farm</h2>
-                            <p>dsuhfsalghafslfskdshldusauh</p>
-                            <button>Close</button>
+                    <div id="farmon" class="planet">
+                        <div id="roboto-content" class="content">
+                            <h2 id="farm-content">Lily's Farm</h2>
+                            <a href="http://www.afinnell.com/farm.html">
+                                <img src="images/lilyfarm.png">
+                            </a>
+                            <p>
+                                I designed this game for my two-year-old daughter.
+                                Colorful animals move across the screen and react when 
+                                clicked or touched. Modular design allows easy addition 
+                                and variation to featured animals. Background and animal 
+                                design provided by my lovely and talented wife.
+                            </p>
+                            <ul>
+                                <li>Responsive layout</li>
+                                <li>Dynamic DOM element creation</li>
+                                <li>Animation with CSS</li>
+                                <li>Difficulty settings</li>
+                            </ul>
+                            <hr>
+                            <a href="http://www.afinnell.com/farm.html">
+                                <button>Website</button>
+                            </a>
+                            <a href="https://github.com/scatterbrain-d/lilys-farm">
+                                <button>Github</button>
+                            </a>
+                            <button class="close">Close</button>
                         </div>
                     </div>
                 </div>
+                <img class="flag" src="images/barn.png">
             </div>
             
             <div id="wok" class="projects">
@@ -114,7 +208,13 @@
                         <div class="content">
                             <h2>Wok of the Falls</h2>
                             <p>dsuhfsalghafslfskdshldusauh</p>
-                            <button>Close</button>
+                            <a href="#">
+                                <button>Website</button>
+                            </a>
+                            <a href="#">
+                                <button>Github</button>
+                            </a>
+                            <button class="close">Close</button>
                         </div>
                     </div>
                 </div>

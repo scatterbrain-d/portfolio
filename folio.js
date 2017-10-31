@@ -6,6 +6,9 @@ planet.forEach(function(p){
     p.addEventListener("mouseenter", function(event){
         var flip = event.target.parentNode;
         flip.style.transform = "rotate(180deg)";
+        console.log(event);
+        var flag = event.target.offsetParent.nextElementSibling;
+        flag.style.transform = "translateY(-65%)";
     });
 });
 
@@ -13,6 +16,8 @@ planet.forEach(function(p){
     p.addEventListener("mouseout", function(event){
         var flip = event.target.parentNode;
         flip.style.transform = "rotate(0deg)";
+        var flag = event.target.offsetParent.nextElementSibling;
+        flag.style.transform = "translateY(75%)";
     });
 });
 
@@ -36,12 +41,6 @@ planet.forEach(function(p){
     });
 });
 
-function close(event){
-    console.log(event);
-    blurb.removeChild(blurb.firstChild);
-    blurb.style.zIndex = -1;
-}
-
 blurb.addEventListener("click", close);
 
 function scroll(distance){
@@ -58,8 +57,7 @@ function scroll(distance){
                 }
                 
 function close(event){
-    console.log(event);
-    if (event.target.nodeName === "BUTTON"){
+    if (event.target.className.includes("close")){
         blurb.removeChild(blurb.firstChild);
         blurb.style.zIndex = -1;
     }
