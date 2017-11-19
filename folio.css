@@ -5,10 +5,20 @@ html, body {
     height: 100vh;
     width: 150vw;
     background: url("images/stars.png");
-    background-size: cover;
+    /*background-size: auto;*/
 }
 
 h2 {margin: 0.5em;}
+
+button, img {box-shadow: 1px 2px 2px #333;}
+
+#sig {
+    position: fixed;
+    padding: 10px;
+    height: 5vh;
+    width: auto;
+    background-color: rgba(0,0,0,0.5);
+}
 
 .container {
     position: absolute;
@@ -60,9 +70,10 @@ h2 {margin: 0.5em;}
     border-radius: 2%;
     padding: 0.5em;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     box-sizing: border-box;
     max-height: 99%;
+    box-shadow: 2px 2px 0 #888;
 }
 
 .content img {
@@ -74,7 +85,13 @@ h2 {margin: 0.5em;}
 }
 
 .content ul {
+    margin: 5px auto;
     display: inline-block;
+    text-align: left;
+}
+
+.content p {
+    margin: 5px auto;
 }
 
 .flag {
@@ -90,7 +107,7 @@ h2 {margin: 0.5em;}
     font-family: 'Alegreya', serif;
 }
 
-#roboto-content {
+.roboto-content {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -249,6 +266,7 @@ input, textarea {
     margin: 1em 1px 0 1px;
     padding: 1px;
     border: 1px solid gray;
+    box-shadow: 0 2px 2px #333;
 }
 
 textarea {height: 10em;}

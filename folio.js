@@ -26,7 +26,6 @@ planet.forEach(function(p){
         if (event.target.id.includes("sun")) {
             if (window.scrollX == 0) {
                 scroll(jump);
-                console.log(event);
             } else {
                 scroll(-jump);
             }
