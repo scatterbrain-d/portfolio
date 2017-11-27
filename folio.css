@@ -2,21 +2,24 @@ html, body {
     margin: 0;
     overflow: hidden;
     font-family: 'Space Mono', monospace;
-    height: 100vh;
-    width: 150vw;
+    height: 100%;
+    width: 100%;
     background: url("images/stars.png");
     /*background-size: auto;*/
 }
 
 h2 {margin: 0.5em;}
 
-button, img {box-shadow: 1px 2px 2px #333;}
+
 
 #sig {
     position: fixed;
-    padding: 10px;
-    height: 5vh;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 5vmin;
     width: auto;
+    z-index: 5;
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -24,6 +27,7 @@ button, img {box-shadow: 1px 2px 2px #333;}
     position: absolute;
     height: 100%;
     width: 100%;
+    transition: all 2s;
 }
 .turntable {
     position: relative;
@@ -70,9 +74,8 @@ button, img {box-shadow: 1px 2px 2px #333;}
     border-radius: 2%;
     padding: 0.5em;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.85);
     box-sizing: border-box;
-    max-height: 99%;
     box-shadow: 2px 2px 0 #888;
 }
 
@@ -94,10 +97,12 @@ button, img {box-shadow: 1px 2px 2px #333;}
     margin: 5px auto;
 }
 
+.content img, button {box-shadow: 1px 2px 2px #333;}
+
 .flag {
     height: 40%;
     position: absolute;
-    top: 12%;
+    top: 13%;
     left:40%;
     transition: all 2s;
     z-index: -1;
@@ -122,6 +127,7 @@ button, img {box-shadow: 1px 2px 2px #333;}
     width: 45%;
     left: 50%;
     text-align: center;
+    overflow: auto;
     z-index: -1;
 }
 
@@ -130,10 +136,11 @@ button, img {box-shadow: 1px 2px 2px #333;}
     width: 35rem;
     position: absolute;
     top: 18%;
-    left: 60%;
+    left: 55%;
     animation-delay: 2s;
     font-size: 2em;
 }
+
 
 #center p {
     height: 45%;
@@ -210,7 +217,7 @@ button, img {box-shadow: 1px 2px 2px #333;}
     height: 10rem;
     width: 10rem;
     position: absolute;
-    left: 100%;
+    left: 110%;
     top: 30%;
 }
 
@@ -227,7 +234,7 @@ button, img {box-shadow: 1px 2px 2px #333;}
     height: 8rem;
     width: 8rem;
     position: absolute;
-    left: 113%;
+    left: 118%;
     top: 70%;
     animation-delay: 2s;
 }
@@ -240,6 +247,7 @@ button, img {box-shadow: 1px 2px 2px #333;}
     background-image: radial-gradient(
         #d60, #620);
 }
+
 
 .container>div {
     text-align: center;
@@ -270,6 +278,54 @@ input, textarea {
 }
 
 textarea {height: 10em;}
+
+@media (max-width: 500px) {
+    #center {
+        height: 20rem;
+        width: 20rem;
+        font-size: 1.2em;
+    }
+    
+    #contact {
+        height: 6rem;
+        width: 6rem;
+        font-size: 0.8em;
+    }
+    
+    #about {
+        height: 8rem;
+        width: 8rem;
+        font-size: 1em;
+    }
+    
+    #chronicle {
+        height: 9rem;
+        width: 9rem;
+        font-size: 1em;
+    }
+    
+    #farm {
+        height: 7rem;
+        width: 7rem;
+        font-size: 0.8em;
+    }
+    
+    #wok {
+        height: 5rem;
+        width: 5rem;
+        font-size: 0.6em;
+    }
+    
+    #blurb {
+        width: 95%;
+        left: 2.5%;
+    }
+    
+    #sig {
+        left:1%;
+    }
+}
+
 
 #a1 {transform: rotate(-35deg)}
 #a2 {transform: rotate(-25deg)}
